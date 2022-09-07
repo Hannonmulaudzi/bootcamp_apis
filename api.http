@@ -1,0 +1,17 @@
+
+POST http://localhost:6007/api/phonebill/total
+content-type: application/json
+
+{
+    "string": "sms,call,sms,call"
+}   
+
+
+
+# 
+POST http://localhost:6007/api/greet
+content-type: application/json
+
+{
+    "name": "james"
+}   
