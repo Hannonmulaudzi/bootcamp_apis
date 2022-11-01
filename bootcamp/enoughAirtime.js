@@ -16,5 +16,8 @@ export default function enoughAirtime(projectedUsage, airtimeAvailable) {
   }
   
   const sum = (airtimeUsed > airtimeAvailable) ? 0 : airtimeAvailable - airtimeUsed;
+  console.log('R' + airtimeUsed.toFixed(2));
   return 'R' + sum.toFixed(2);
   }
+  console.log(enoughAirtime('call,call,call,data,sms,sms,call,data', 50));
+  

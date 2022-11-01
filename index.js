@@ -53,6 +53,16 @@ app.get('/api/getting', (req, res) => {
     console.log('request received');
 })
 
+let available = 0
+     app.post('/api/enoughAirtime', (req, res) => {
+        const projectedUsage = req.body.projectedUsage
+        const available = req.body.available
+       // console.log(reg.body)
+       console.log(enoughArtime(projectedUsage, avaliable))
+       res.json({
+        result : enoughAirtime(projectedUsage, available)
+       });
+     });
 app.post('/api/greet', (req, res) => {
     const name = req.body.name;
     console.log(req.body);
